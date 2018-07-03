@@ -19,6 +19,12 @@
     "grunt-contrib-watch": "~0.6.1",
     "grunt-contrib-csslint": "~0.2.0",
     "grunt-html-validation": "~0.1.14",
-    "grunt-zip": "~0.13.0"
-  }
+    "grunt-zip": "~0.13.0",
+    "snyk": "^1.88.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
